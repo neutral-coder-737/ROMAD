@@ -1,0 +1,87 @@
+twin_bracelets:
+    data_path: data/twin_bracelets
+    checkpoint_path: final_checkpoints/rtdetr_large_twin_bracelets_manual8_pseudo64_adfullshot_pass2.pt
+    train_data_dirs:
+        - train/good/twin_a
+        - train/good/twin_b
+    test_data_dirs:
+        - test/good/twin_a
+        - test/good/twin_b
+        - test/logical_anomalies/twin_a/extra_beads
+        - test/logical_anomalies/twin_a/wrong_orientations
+        - test/logical_anomalies/twin_a/wrong_permutations
+        - test/logical_anomalies/twin_a/duplicate_letters
+        - test/logical_anomalies/twin_b/extra_beads
+        - test/logical_anomalies/twin_b/wrong_orientations
+        - test/logical_anomalies/twin_b/wrong_permutations
+        - test/logical_anomalies/twin_b/duplicate_letters
+        - test/logical_anomalies/cross_combinations
+    obj_threshold: 0.7
+    context_count: 3
+    area_coeff: 0.5
+    embedding_size: 256
+
+screw_bag:
+    data_path: data/screw_bag
+    checkpoint_path: final_checkpoints/rtdetr_large_screw_bag_manual6_pseudo64_adfullshot_pass2.pt
+    train_data_dirs:
+        - train/good
+    test_data_dirs:
+        - test/good
+        - test/logical_anomalies
+    obj_threshold: 0.7
+    context_count: 3
+    area_coeff: 0.5
+    embedding_size: 256
+
+splicing_connectors:
+    data_path: data/splicing_connectors
+    checkpoint_path: final_checkpoints/rtdetr_large_splicing_connectors_manual6_pseudo64_adfullshot_pass2.pt
+    train_data_dirs:
+        - train/good
+    test_data_dirs:
+        - test/good
+        - test/logical_anomalies
+    obj_threshold: 0.7
+    context_count: 3
+    area_coeff: 0.5
+    embedding_size: 256
+
+juice_bottle:
+    data_path: data/juice_bottle
+    checkpoint_path: final_checkpoints/rtdetr_large_juice_bottle_manual6_pseudo64_adfullshot_pass2.pt
+    train_data_dirs:
+        - train/good
+    test_data_dirs:
+        - test/good
+        - test/logical_anomalies
+    obj_threshold: 0.7
+    context_count: 3
+    area_coeff: 0.5
+    embedding_size: 256
+
+breakfast_box:
+    data_path: data/breakfast_box
+    checkpoint_path: final_checkpoints/rtdetr_large_breakfast_box_manual6_pseudo19_adfullshot_pass2.pt
+    train_data_dirs:
+        - train/good
+    test_data_dirs:
+        - test/good
+        - test/logical_anomalies
+    obj_threshold: 0.7
+    context_count: 3
+    area_coeff: 0.5
+    embedding_size: 256
+
+pushpins:
+    data_path: data/pushpins
+    checkpoint_path: final_checkpoints/rtdetr_large_pushpins_manual6_pseudo64_adfullshot_pass2.pt
+    train_data_dirs:
+        - train/good
+    test_data_dirs:
+        - test/good
+        - test/logical_anomalies
+    obj_threshold: 0.7
+    context_count: 3
+    area_coeff: 0.5
+    embedding_size: 256

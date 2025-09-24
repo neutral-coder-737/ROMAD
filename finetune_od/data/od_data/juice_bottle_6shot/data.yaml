@@ -1,0 +1,6 @@
+train : images/train
+val : images/val
+scale: l
+
+nc : 8
+names : ["orange_level", "upper_tag", "orange_icon", "lower_tag", "banana_level", "banana_icon", "cherry_level", "cherry_icon"]

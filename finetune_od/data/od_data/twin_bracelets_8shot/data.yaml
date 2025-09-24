@@ -1,0 +1,6 @@
+train : images/train
+val : images/val
+scale: l
+
+nc : 13
+names : ["black_bead", "white_bead", "black_s", "hex", "white_p", "black_a", "white_r", "black_k", "white_s", "black_p", "white_a", "black_r", "white_k"]

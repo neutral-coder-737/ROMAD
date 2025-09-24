@@ -1,0 +1,6 @@
+train : images/train
+val : images/val
+scale: l
+
+nc : 4
+names : ["pin", "blue_wire", "yellow_wire", "red_wire"]

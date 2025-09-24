@@ -1,0 +1,6 @@
+train : images/train
+val : images/val
+scale: l
+
+nc : 5
+names : ["cereal", "almond", "banana_slice", "tangerine", "nectarine"]
