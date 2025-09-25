@@ -62,7 +62,7 @@ Follow these steps to fine-tune the object detector.
 Alternatively, you can use our pre-trained checkpoints available [here](https://huggingface.co/datasets/neutral-coder-737/materials/blob/main/final_checkpoints.tar.gz) and skip this step.
 
 ### 1. Prepare Datasets
-we provide the few manually annotated samples (in YOLO format) required for fine-tuning the detector. You may use these or prepare your own annotations.
+We provide the few manually annotated samples (in YOLO format) required for fine-tuning the detector. You may use these or prepare your own annotations.
 
 Organize the annotations and their corresponding dataset images in the exact following format:
 ```
@@ -163,12 +163,7 @@ Run:
 python3 runner.py
 ```
 
-<!-- ## Citation
-```
-placeholder
-``` -->
-
 
 ## Acknowledgements
 We build on the [ultralytics](https://github.com/ultralytics/ultralytics) implementations of RT-DETR and SAM.
-Our modifications to the original code can be found in: `ultralytics/ultralytics-modifications.patch`
+Our modifications to the original code can be found in: `ultralytics/ultralytics_modifications.patch`

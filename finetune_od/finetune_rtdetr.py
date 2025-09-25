@@ -208,7 +208,6 @@ def train_rtdetr(
     return RTDETR(archive_path)
 
 
-# TODO: change exact match to returning the k lowest distances
 def gen_pseudo_annotations(
     rtdetr_model,
     trainset_root_path,
